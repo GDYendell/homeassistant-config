@@ -1,0 +1,18 @@
+# Logs
+logs
+*.log
+
+# Python cache
+__pycache__
+*.pyc
+
+# Private
+.storage
+*.conf
+home-assistant*.*
+secrets.yaml
+tts
+
+# External Modules
+custom_components/hacs
+custom_components/spotcast

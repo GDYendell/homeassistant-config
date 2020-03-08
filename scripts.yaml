@@ -1,0 +1,7 @@
+'1582910854009':
+  alias: Test
+  sequence:
+  - device_id: c8e785783e794b9595c944ffb6a4081f
+    domain: light
+    entity_id: light.landing_light
+    type: turn_off

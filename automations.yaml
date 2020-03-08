@@ -1,0 +1,18 @@
+- id: alarm
+  alias: Alarm Light & Sound
+  trigger:
+  - at: 07:00
+    platform: time
+  action:
+  - data:
+      duration: 30
+      max_volume: 0.5
+      speaker_entity_id: media_player.bedroom_speaker
+      speaker_friendly_name: Bedroom speaker
+      spotify_uri: spotify:playlist:37i9dQZF1DWVEt8B7a1H1M
+    service: python_script.spotifyalarm
+  - data:
+      light_entity_id: light.landing_light
+      duration: 30.0
+      max_brightness: 255
+    service: python_script.lightfadein
